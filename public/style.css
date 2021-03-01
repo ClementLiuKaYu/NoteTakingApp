@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn{
+    width: 100px;
+    height: 30px;
+}
+
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.footer{
+    position: fixed;
+    top: calc(100% - 30px);
+    width: 100%;
+    height: 30px;
+    background-color: #888888;
+    display: flex;
+    align-items: center;
+}

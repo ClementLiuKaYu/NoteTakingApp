@@ -1,0 +1,10 @@
+<form id="addnote">
+    <textarea name="addnote"></textarea>
+    <input type="submit" value="Add">
+</form>
+
+<div id="notes">
+    {{#each notes}}
+        <textarea>{{this}}</textarea>
+    {{/each}}
+</div>
