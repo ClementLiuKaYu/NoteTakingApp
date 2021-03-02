@@ -18,3 +18,7 @@ app.use(express.static('public'))
 app.get('/',(req,res)=>{
     res.render('index',{notes:[1,2,3,4,5]})
 })
+
+app.get('/login',(req,res)=>{
+    res.render('login')
+})
