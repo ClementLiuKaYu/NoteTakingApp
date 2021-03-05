@@ -1,14 +1,3 @@
-require('dotenv').config()
-
-const knex = require('knex')({
-    client: 'postgresql',
-    connection: {
-        user: process.env.DB_USERNAME,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME
-    }
-})
-
 class User {
     constructor(knex){
         this.knex = knex
@@ -26,3 +15,5 @@ class User {
         })
     }
 }
+
+module.exports = User

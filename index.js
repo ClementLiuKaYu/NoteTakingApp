@@ -23,10 +23,9 @@ const knex = require('knex')({
 // User authentication setup
 const bcrypt = require('bcrypt')
 const passport = require('passport')
-const passportInit = require('./server/user-auth')
+const userAuth = require('./server/user-auth')
 const flash = require('express-flash')
 const session = require('express-session')
-const userAuth = require('./server/user-auth')
 
 userAuth.initialize(passport,email => users.find(user => user.email === email),id => users.find(user => user.id === id))
 

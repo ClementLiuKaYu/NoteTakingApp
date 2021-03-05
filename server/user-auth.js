@@ -27,7 +27,6 @@ const initialize = (passport,getUserByEmail,getUserById) => {
 
 const checkAuth = (req,res,next) => {
     if (req.isAuthenticated()){
-        console.log('checkauth ok')
         return next()
     }
     res.redirect('/login')
@@ -37,7 +36,6 @@ const checkNotAuth = (req,res,next) => {
     if (req.isAuthenticated()){
         return res.redirect('/')
     }
-    console.log('checknotauth ok')
     next()
     return
 }
